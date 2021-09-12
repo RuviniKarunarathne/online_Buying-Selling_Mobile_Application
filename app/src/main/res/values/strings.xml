@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Siyaluma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="topic_one">Frequently Asked</string>
+    <string name="topic_two">Questions</string>
+    <string name="todo">TODO</string>
+    <string name="pay_cus_name">Kevin Harald</string>
+    <string name="pay_delivery">Delivery Option</string>
+    <string name="pros_item_name">Curren Military Camo Analog Watch</string>
+    <string name="pros_del_time">Est.Arrival 12–15 sep</string>
+    <string name="pros_del_chg">Rs 215.00</string>
+    <string name="pros_item_prc">Rs 1750</string>
+    <string name="pros_item_qty">qty:1</string>
+    <string name="pros_item_cht_txt">1 item(s) total:</string>
+    <string name="pros_subtotal_txt">Subtotal(1 item(s))</string>
+    <string name="pros_shpping_txt">Shipping Fee</string>
+    <string name="pros_final_prc_txt">Total:</string>
+    <string name="proceed_to_pay_btn">Proceed to pay</string>
+    <string name="login_topic">Welcome Back!</string>
+    <string name="username_log">Username</string>
+    <string name="password_log">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="none">none</string>
+    <string name="payment_method_slt">Select Payment Method</string>
+    <string name="credit_debit_card_method">Credit/Debit Card</string>
+    <string name="cash_on_delivery_pay">Cash On Delivery</string>
+    <string name="total_amount_pay">Total Amount</string>
+    <string name="name_on_card_pay">Name On Card</string>
+    <string name="card_number_pay">Card Number</string>
+    <string name="card_date_pay">MM/YY</string>
+    <string name="card_cvv_pay">cvv</string>
+    <string name="pay_now_pay">Pay Now</string>
+    <string name="payment_success_topic">Payment Success!</string>
+    <string name="payment_success_est_time">Placed On 6.12 p.m 04 sep 2021</string>
+    <string name="order_no_payment">Order No : 001458763331</string>
+    <string name="payment_thankyou_message">For Shopping at Siyaluma.lk</string>
+    <string name="payment_thankyou_one">Thank You!</string>
+    <string name="payment_shop_more">Shop for More >></string>
+    <string name="shop_more_link">Siyaluma.lk</string>
+    <string name="pay_cancel_reason_top">Cancellation Reason</string>
+    <string name="order_can_req_btn">Submit</string>
+    <string name="cancelation_reason_suc_topic">Cancellation Reason</string>
+    <string name="cancelation_reason_suc">Change of mind</string>
+    <string name="order_cancel_msg">You Order Has Been Cancelled</string>
+    <string name="order_cancel_success_msg">Successfully!</string>
+    <string name="account_create_topic">Create An Account</string>
+    <string name="register_user_name">Name</string>
+    <string name="register_email">Email</string>
+    <string name="register_Address">Address</string>
+    <string name="register_btn">Register</string>
+    <string name="forget_topic">Forgot your password?</string>
+    <string name="forget_sub_topic">Tell us your email address, and we’ll get</string>
+    <string name="forget_sub_topic2">you back on track in no time</string>
+    <string name="forget_btn">Reset Password</string>
+    <string name="back_signin"><![CDATA[Back to sign in>>]]></string>
+    <string name="forget_link">Forgot Password?</string>
+    <string-array name="cancelReason_pay">
+        <item>Change of mind</item>
+        <item>Delivery time is too long</item>
+        <item>Duplicate order</item>
+        <item>Shipping fees</item>
+        <item>Duplicate order</item>
+        <item>Change payment method</item>
+        <item>Found Cheaper elsewhere</item>
+    </string-array>
+</resources>

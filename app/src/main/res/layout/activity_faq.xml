@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".FAQ">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+
+        <ImageView
+            android:id="@+id/side_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/side_menu"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_border">
+
+        <TextView
+            android:id="@+id/topic_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/topic_one"
+            android:textColor="#1F2880"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/topic_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic_one"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:text="@string/topic_two"
+            android:textColor="#1F2880"
+            android:textSize="30sp" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic_two"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:tabIndicatorColor="#00BFFF"
+            app:tabSelectedTextColor="#478778"
+            app:tabTextColor="#4CBB17" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tab_layout"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".OrderCancellation">
+
+    <LinearLayout
+        android:id="@+id/cancel_suc_req_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/side_menu_pay_success"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:src="@drawable/side_menu" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cancel_suc_req_head"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_border">
+
+
+        <LinearLayout
+            android:id="@+id/cancel_req_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/pay_cancel_item_border"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/proceed_item_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/proceed_item_img_cancel_success"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/none"
+                    android:src="@drawable/pros_item"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:id="@+id/item_name_pay_cancel_success"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pros_item_name"
+                        android:textColor="#000000"
+                        android:textSize="16.5sp" />
+
+                    <TextView
+                        android:id="@+id/item_prc_pay_cancel_success"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:text="@string/pros_item_prc"
+                        android:textColor="#FF1B0D"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/item_id_pay_cancel_success"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:text="@string/order_no_payment"
+                        android:textColor="#278BFF"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel_succes_msg_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel_req_item_container"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/payment_input"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/cancelation_reason_suc_topic"
+                    android:textColor="#FF1B0D"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cancel_reason_sucss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/cancelation_reason_suc"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#FF1B0D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/order_cancel_msg"
+                    android:textColor="#1F2880"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/order_cancel_success_msg"
+                    android:textColor="#1F2880"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel_succes_msg_container"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/payment_shop_more"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cancel_order_shop_more_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/shop_more_link"
+                android:textColor="#1F2880"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

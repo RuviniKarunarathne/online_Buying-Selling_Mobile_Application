@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".FirstFragment"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/f3_card_qs_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/f3_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/layout_back_css">
+
+                <LinearLayout
+                    android:id="@+id/f3_background_Lay_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_back_css">
+
+                    <TextView
+                        android:id="@+id/f3_qs1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Hello hefdfddddddddddddddddddddddddddddddddddddddddddddddddddddd!"
+                        android:textColor="@color/faq_qs_color"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:id="@+id/f3_drop_up_icon"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_drop">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/f3_ans1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:layout_marginStart="20dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginEnd="35dp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/f3_card_qs_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/f3_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/layout_back_css">
+                <LinearLayout
+                    android:id="@+id/f3_background_Lay_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_back_css">
+
+                    <TextView
+                        android:id="@+id/f3_qs2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Hello hefdf!"
+                        android:textColor="@color/faq_qs_color"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:id="@+id/f3_drop_up_icon2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_drop">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/f3_ans2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:layout_marginStart="20dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginEnd="35dp"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/f3_card_qs_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/f3_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/layout_back_css">
+
+                <LinearLayout
+                    android:id="@+id/f3_background_Lay_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_back_css"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/f3_qs3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Hello hefdf!"
+                        android:textColor="@color/faq_qs_color"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:id="@+id/f3_drop_up_icon3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_drop">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/f3_ans3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:layout_marginStart="20dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginEnd="35dp"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/f3_card_qs_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/f3_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/layout_back_css">
+
+                <LinearLayout
+                    android:id="@+id/f3_background_Lay_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_back_css">
+
+                    <TextView
+                        android:id="@+id/f3_qs4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Hello hefdf!"
+                        android:textColor="@color/faq_qs_color"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:id="@+id/f3_drop_up_icon4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_drop">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/f3_ans4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginEnd="35dp"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

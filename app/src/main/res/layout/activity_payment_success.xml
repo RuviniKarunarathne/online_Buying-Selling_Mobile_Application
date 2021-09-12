@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PaymentSuccess">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_gradient">
+
+        <LinearLayout
+            android:id="@+id/container_success_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/side_menu_pay_success"
+                android:layout_marginStart="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/side_menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_body_pay_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container_success_payment"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_border"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_success_bd_grd"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/pay_success_body_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="0.70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/payment_success_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_success_topic"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/payment_success_est_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_success_est_time"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.30"
+                    android:adjustViewBounds="true"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/pay_success_ic" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/pay_delivery"
+                android:textColor="#717171"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_pay_success_ic" />
+
+                    <TextView
+                        android:id="@+id/success_pay_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/pay_delivery"
+                        android:textColor="#717171"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/success_pay_tel_ic" />
+
+                    <TextView
+                        android:id="@+id/success_pay_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/pay_delivery"
+                        android:textColor="#717171"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/success_pay_loc_ic" />
+
+                    <TextView
+                        android:id="@+id/success_pay_loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/pay_delivery"
+                        android:textColor="#717171"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pros_item_border"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:id="@+id/proceed_item_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/proceed_item_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/none"
+                        android:src="@drawable/pros_item"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:id="@+id/delivery_item_name_pay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pros_item_name"
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/delivery_item_prc_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:text="@string/pros_item_prc"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <Button
+                                android:id="@+id/payment_cancel_btn"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_weight=".20"
+                                android:background="@drawable/custom_btn"
+                                android:text="@string/pay_now_pay"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/payment_input"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/success_pay_orderNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/order_no_payment"
+                        android:textColor="#278BFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/payment_thankyou_one"
+                        android:textColor="#1F2880"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/payment_thankyou_message"
+                        android:textColor="#1F2880"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/payment_shop_more"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/shop_more_link"
+                    android:textColor="#1F2880"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
